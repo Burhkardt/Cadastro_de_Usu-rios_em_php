@@ -22,7 +22,7 @@ if (isset($botao)){
         $info = $lista->fetch_array();
         $nome = $info["Nome"];
         $cpf = $info["CPF"];
-        $ocodigo = base64_encode($codigobrabo);
+        $ocodigo = base64_encode($secretkey);
         echo "<script language='javascript' type='text/javascript'>
         alert('$ocodigo');</script>";
         setcookie("access_token",md5($cpf.$ocodigo.base64_encode($nome)), time() + 60*30, '/');

@@ -11,7 +11,7 @@ $lista_completa = $connect->query("SELECT Nome, CPF FROM Usuario WHERE CPF IS NO
 $info = $lista_completa->fetch_all();
 echo base64_encode($info[0][0]);
 $connect->close();
-$senhaSecreta = base64_encode($codigobrabo);
+$senhaSecreta = base64_encode($secretkey);
 $lista = array();
 foreach ($info as $teste){
     echo base64_encode($teste[0]);
