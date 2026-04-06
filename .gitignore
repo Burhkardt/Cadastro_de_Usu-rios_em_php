@@ -1,0 +1,8 @@
+#deve ser criado utilizando o create_json após a adição do código secreto
+listachaves.json
+
+#componente chave de segurança, responsável pela criptografia das senhas
+secret_code.php
+
+#Esse gitignore foi feito para fins demonstrativos e o create_json deve ser executado sempre que um 
+#novo usuário é adicionado, para a adição do código de segurança dele à lista.
